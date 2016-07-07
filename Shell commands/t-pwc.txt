@@ -1,0 +1,8 @@
+valid test targets for PWC are:
+	battery_detect
+	get_pwc_cp
+	forced_power_down
+	seq_pin_ctrl
+	get_wkup_ctrl_status
+	clr_wkup_ctrl_status
+	enable_wkup_ctrl

@@ -1,0 +1,4 @@
+valid test targets for sr are:
+	get_status
+	exec
+	crc

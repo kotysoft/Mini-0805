@@ -1,0 +1,43 @@
+Usage: t dspinfo
+ DSP Information ------------------------------------------------
+ t dspinfo dsp_info                 - dsp init data
+ t dspinfo dsp_ver                  - dsp ucode version
+ t dspinfo dsp_msg                  - dsp returned message
+
+ Show DSP Command ---------------------------------------------
+ t dspinfo def_cmd                  - Show default commands
+ t dspinfo dsp_cmd  [on/off]        - Enable/disable ALL dsp command 
+ t dspinfo idsp_cmd [on/off]        - Enable/disable idsp command 
+ t dspinfo show_cmd help            - Detail info of cmd_code
+ t dspinfo show_cmd list_ena        - List out show enabled cmd_code
+ t dspinfo show_cmd list_dis        - List out show disabled cmd_code
+ t dspinfo show_cmd [on/off]        - Turn on/off ALL dsp cmd info
+ t dspinfo show_cmd [cmd_code][1/0] - Show single command
+                    [cmd_code]      - The code of command to show on
+                              [1/0] - turn on/off to show cmd info
+
+ DSP Command utility-------------------------------------------
+ t dspinfo drvmsg [on/off]          - enable/disable dsp driver debug message.
+ t dspinfo drvmsg dump [file_name]  - dump dsp driver debug message to file
+ t dspinfo drvmsg show [irq#][val]  - set dsp driver debug message SHOW mode.
+                       [irq#]       - 0, direct apply.
+                       [irq#]       - x, Keep showing x VDSP sync.
+                             [val]  - show mode val.
+ t dspinfo drvmsg log  [irq#][val]  - set dsp driver debug message SHOW mode.
+                       [irq#]       - 0, direct apply.
+                       [irq#]       - x, Keep showing x VDSP sync.
+                            [val]   - show mode val.
+ t dspinfo pcdump                   - show DSP PC debug info.
+ t dspinfo waitvdsp [irq#][timeout(ms)] - wait vdsp interrupt with timeout
+
+ IAV Information ------------------------------------------------
+ t dspinfo vid_proc                 - video preprocessing information
+ t dspinfo vout0_info               - LCD out dsp data
+ t dspinfo vout1_info               - TV out dsp data
+ t dspinfo vid_enc                  - video encode object info
+ t dspinfo vid_dec                  - video decode object info
+ t dspinfo aud_enc                  - audio encode object info
+ t dspinfo aud_dec                  - audio decode object info
+ t dspinfo pic_enc                  - picture encode object info
+ t dspinfo pic_dec                  - picture decode object info
+ t dspinfo raw_enc                  - raw encode object info

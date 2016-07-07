@@ -1,0 +1,7 @@
+valid test targets for UART are:
+	uart1_test
+	loopback_test
+	chan_enable
+	fc_mode
+	fast_mode_tx
+	fast_mode_rx

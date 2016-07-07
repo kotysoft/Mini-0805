@@ -1,0 +1,12 @@
+usage: spi [instance] config [id] [mode] [dfs] [baud_rate] [tssi_mode]
+[instance] write [id] [size] [rand_src/rdata/config/seq_num]
+[instance] read [id] [size] [rx_buffer/config]
+[instance] write_read [id] [size] [rand_src/rdata/config/seq_num] [rx_buffer/config]
+loop_back_master [mode] [dfs] [baud_rate] [size]
+loop_back_slave 
+polarity [id] [polarity] 
+loop_back [size] (use one board only)
+spi_hs [size] [baud_rate] (master_2 only)
+compare [size] 
+instance : 0=> master_0, 1=> master_1, 2=> master_2, 0x80=> slave_0
+Examlpe: t spi 0 config 1 3 0xf 20000 0

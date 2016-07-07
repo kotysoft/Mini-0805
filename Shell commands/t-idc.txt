@@ -1,0 +1,20 @@
+Usage: t idc [option]
+Options:
+  config <instance> <slave_addr> <protocol>
+				Make connection and select protocol
+  speed  [10|100|400]		Change operation mode
+  write  <addr> <data>...	Write data to specific register
+  read   <addr> <size>		Read data from registers
+  check				Check the current IDC configuration
+  scan   <instance> <protocol> <reg_addr>
+				Look for one or more valid slave addresses.
+
+    PROTOCOL SLV_ADDR REG_ADDR   DATA      PROTOCOL SLV_ADDR REG_ADDR   DATA
+    -----------------------------------    -----------------------------------
+      0       8-bit    ------    8-bit       6       16-bit   ------    8-bit 
+      1       8-bit    ------   16-bit       7       16-bit   ------   16-bit 
+      2       8-bit     8-bit    8-bit       8       16-bit    8-bit    8-bit 
+      3       8-bit     8-bit   16-bit       9       16-bit    8-bit   16-bit 
+      4       8-bit    16-bit    8-bit       10      16-bit   16-bit    8-bit 
+      5       8-bit    16-bit   16-bit       11      16-bit   16-bit   16-bit 
+    -----------------------------------    -----------------------------------

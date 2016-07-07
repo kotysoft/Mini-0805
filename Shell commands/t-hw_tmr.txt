@@ -1,0 +1,6 @@
+valid test targets for HW_TMR are:
+	reg_tmr_cb
+	reset_cb
+	enable
+	disable
+	show_acc_counter_val

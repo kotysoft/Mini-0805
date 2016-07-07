@@ -1,0 +1,5 @@
+Usage: vout 
+		 gamma [chan](0/1) [enable](0/1) [mode](0/1) [color]
+		 clk [chan]
+		 set_clk [chan] [hz]
+		 lcd 

@@ -1,0 +1,21 @@
+
+SYNOPSIS
+	t sensor [4mOPTION[0m [[4mARGUMENT[0m]
+
+DESCRIPTION
+	Immediately manipulate sensor driver according to [4mOPTION[0m:
+
+	[1m-r [reg_addr] [num_regs]    [0mRead sensor registers.
+	[1m-w [reg_addr] [reg_data]    [0mWrite one sensor register.
+	[1m-gain [gain_idx]		    [0mSet sensor gain with the virtual gain index.
+	[1m-shr [mode] [shr_idx]	    [0mSet integration time with the shutter speed index.
+	[1m-mode [mode]		    [0mChange sensor mode.
+	[1m-fps [num] [den]		    [0mChange frame rate of the current sensor mode.
+	[1m-dzoom [dzoom_level]		    [0mChange dzoom level of the current sensor mode.
+	[1m-brief			    [0mPrint sensor current setting in brief.
+	[1m-detail			    [0mPrint sensor current setting in detail.
+	[1m-winfo [item] [type] [0mPrint sensor preview/capture/calibration window list.
+	[1m-reg_dump		    [0mRegister dump provided by sensor.
+	[1m-debug [mask]		    [0mVerbosity control for sensor debug purpose.
+	[1m-minfo [mode number]		    [0mPrint the information of sensor modes.
+	[1m-sub_chan [id]		    [0mForce the sub_channel to be accessed.
